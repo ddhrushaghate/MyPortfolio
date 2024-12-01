@@ -1,0 +1,213 @@
+/* General reset and layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column; /* Vertical layout */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    background-color: #f4f4f9;
+}
+
+/* Navigation Bar */
+nav {
+    position: absolute;
+    top: 20px; /* Positioned at the top */
+    left: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: underline color(srgb #ff0000 green blue);
+    color: #101316c0;
+    font-weight: bold;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Profile image styles */
+.profile-img img {
+    width: 250px; /* Set the width of the image */
+    height: 250px; /* Set the height of the image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the circular area */
+    border: 4px solid #333; /* Optional: Add a border around the circle */
+}
+
+/* Section Styling */
+section {
+    text-align: center;
+    margin-top: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Headings */
+h2, h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Paragraphs */
+p {
+    color: #555;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Contact Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #0b1261; /* Blue color on focus */
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #0b1261;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3d4a84; /* Lighter blue on hover */
+}
+
+/* Contact Information Section */
+section p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Contact Email Link */
+section a {
+    color: #0b1261;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+        margin: 10px;
+    }
+    h2, h3 {
+        font-size: 20px;
+    }
+    input, textarea, button {
+        font-size: 14px;
+    }
+}
+/* Additional Styling for Sections */
+.info, .hobbies {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #0b1261;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+a {
+    color: #0b1261;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #0b1261;
+    color: white;
+}
